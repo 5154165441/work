@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>xgplayer</title>
+    <style type="text/css">
+      html, body {width:50%;height:50%;margin:auto;overflow: hidden;}
+    </style>
+  </head>
+  <body>
+    <div id="mse"></div>
+    <script src="//unpkg.byted-static.com/xgplayer/2.31.6/browser/index.js" charset="utf-8"></script>
+      <script>
+      let player = new Player({
+		"id": "mse",
+		"url": "//lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo.mp4",
+		"playsinline": true,
+		"whitelist": [
+				""
+		],
+		"width": 600,
+		"height": 337,
+		"autoplay": true,
+		"fluid": true,
+		"playbackRate": [
+				2
+		],
+		"danmu": {
+				"comments": [
+						{
+								"duration": 15000,
+								"id": "2",
+								"start": 3000,
+								"txt": "长弹幕长弹幕长弹幕",
+								"mode": "top"
+						},
+						{
+								"duration": 15000,
+								"id": "3",
+								"start": 4000,
+								"txt": "长弹幕长弹幕长弹幕",
+								"mode": "bottom"
+						},
+						{
+								"duration": 15000,
+								"id": "4",
+								"start": 5000,
+								"txt": "长弹幕长弹幕长弹幕",
+								"mode": "scroll"
+						},
+						{
+								"duration": 15000,
+								"id": "5",
+								"start": 8000,
+								"txt": "长弹幕长弹幕长弹幕",
+								"mode": "scroll"
+						}
+				],
+				"area": {
+						"start": 0,
+						"end": 1
+				},
+				"closeDefaultBtn": false,
+				"defaultOff": false,
+				"panel": true
+		},
+		"thumbnail": {
+				"pic_num": 44,
+				"width": 160,
+				"height": 90,
+				"col": 10,
+				"row": 10,
+				"urls": [
+						""
+				]
+		},
+		"screenShot": true,
+		"download": true,
+		"pip": true,
+		"keyShortcut": "on",
+		"closeVideoClick": false
+      });
+
+          </script>
+  </body>
+</html>

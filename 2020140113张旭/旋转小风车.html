@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转小风车</title>
+    <style>
+      /**background：linear-gradient（起始方向，颜色1，颜色2，…）;
+        background：-webkit-linear-gradient（left，red，blue）;（兼容性）
+          background：-webkit-linear-gradient（left top，red，blue）;（方向）**/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            animation: rotate 0.01s linear infinite;
+        }
+
+        .center {
+            position: absolute;
+            top: 140px;
+            left: 140px;
+            width: 20px;
+            height: 20px;
+            background: -webkit-linear-gradient( left top, blue, red);
+        }
+
+        .box .hezi {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .box .hezi:nth-child(1) span {
+            width: 150px;
+            height: 150px;
+            margin-top: 75px;
+            border-radius: 50% 50% 0 0;
+            background: -webkit-linear-gradient( left top, #09aaee, rgb(29, 201, 32));
+        }
+
+        .box .hezi:nth-child(2) span {
+            width: 150px;
+            height: 150px;
+            margin-left: -75px;
+            border-radius: 0 50% 50% 0;
+            background: -webkit-linear-gradient( left top, rgb(87, 30, 73), #fff);
+        }
+
+        .box .hezi:nth-child(3) span {
+            width: 150px;
+            height: 150px;
+            margin-left: -75px;
+            border-radius: 0 50% 50% 0;
+            background: -webkit-linear-gradient( left top, rgb(93, 210, 240), #fff);
+        }
+
+        .box .hezi:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        .box .hezi:nth-child(4) span {
+            width: 150px;
+            height: 150px;
+            margin-top: -75px;
+            border-radius: 0 0 50% 50%;
+            background: -webkit-linear-gradient( right top, rgb(252, 201, 91), #fff);
+        }
+
+        @keyframes rotate {
+            0% {}
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+	</style>
+</head>
+<body>
+<div class="box">
+    <div class="hezi">
+        <span></span>
+    </div>
+    <div class="hezi">
+        <span></span>
+    </div>
+    <div class="hezi">
+        <span></span>
+    </div>
+    <div class="hezi">
+        <span></span>
+    </div>
+    <div class="center"></div>
+    <div class="zhuzi"></div>
+</div>
+</body>
+</html>
